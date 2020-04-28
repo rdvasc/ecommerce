@@ -6,6 +6,7 @@ class ComposerAutoloaderInit43f334bcf01fea81d2953cb7ee153ed9
 {
     private static $loader;
 
+
     public static function loadClassLoader($class)
     {
         if ('Composer\Autoload\ClassLoader' === $class) {
@@ -13,9 +14,7 @@ class ComposerAutoloaderInit43f334bcf01fea81d2953cb7ee153ed9
         }
     }
 
-    /**
-     * @return \Composer\Autoload\ClassLoader
-     */
+
     public static function getLoader()
     {
         if (null !== self::$loader) {
