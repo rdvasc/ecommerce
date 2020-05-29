@@ -22,7 +22,7 @@ class Category extends Model {
 
 		$sql = new Sql();
 
-		$results = $sql->select("CALL sp_CATEGORIES_save(:idcategory, :descategory)", array(
+		$results = $sql->select("CALL sp_categories_save(:idcategory, :descategory)", array(
 			":idcategory"=>$this->getidcategory(),
 			":descategory"=>$this->getdescategory()
 		));
