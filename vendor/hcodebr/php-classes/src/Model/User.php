@@ -128,8 +128,9 @@ class User extends Model {
             ":despassword" => User::getPasswordHash($this->getdespassword()),
             ":desemail"    => $this->getdesemail(),
             ":nrphone"     => $this->getnrphone(),
-            ":inadmin"     => $this->getinadmin(),
+            ":inadmin"     => $this->getinadmin()
         ));
+
 
         $this->setData($results[0]);
 
